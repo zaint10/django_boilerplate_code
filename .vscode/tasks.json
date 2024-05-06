@@ -6,7 +6,7 @@
             "type": "shell",
             "command": "python",
             "args": [
-                "${workspaceFolder}/manage.py",
+                "${workspaceFolder}/backend/manage.py",
                 "migrate"
             ],
             "presentation": {
@@ -29,7 +29,7 @@
             "type": "shell",
             "command": "python",
             "args": [
-                "${workspaceFolder}/manage.py",
+                "${workspaceFolder}/backend/manage.py",
                 "makemigrations"
             ],
             "presentation": {

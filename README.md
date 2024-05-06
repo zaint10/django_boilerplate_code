@@ -3,6 +3,12 @@
 
 This repository is a boilerplate Django project for quickly getting started.
 
+# Some Pointers
+
+1. Project Root is backend (but you can change the name)
+2. Project Root Dir is backend (backend/backend). The first one is project root.
+3. App
+
 ## Getting started
 
 Steps:

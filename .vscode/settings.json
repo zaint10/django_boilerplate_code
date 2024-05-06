@@ -1,13 +1,25 @@
 {
-  "python.pythonPath": "${workspaceFolder}/env/bin/python3",
   "editor.formatOnSave": true,
-  "python.linting.pycodestyleEnabled": true,
-  "python.linting.pylintEnabled": true,
-  "python.linting.pylintPath": "pylint",
-  "python.linting.pylintArgs": ["W0614", "--load-plugins", "pylint_django"],
-  "python.venvPath": "${workspaceFolder}/env/bin/python3",
-  "python.linting.pycodestyleArgs": ["--ignore=E501"],
+  "editor.formatOnPaste": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "files.exclude": {
     "**/*.pyc": true
-  }
+  },
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "djangointellisense.projectRoot": "${workspaceFolder}/backend/app",
+  "djangointellisense.settingsModule": "app.settings",
+  "python.autoComplete.extraPaths": ["${workspaceFolder}/backend/app"],
+  "python.analysis.extraPaths": ["${workspaceFolder}/backend/app"],
+  "djangointellisense.debugMessages": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit",
+      "source.organizeImports.ruff": "explicit",
+      "source.fixAll.ruff": "explicit",
+      "source.document": "always"
+    },
+    "editor.formatOnPaste": true
+  },
+  "pylint.cwd": "${workspaceFolder}/backend",
 }
