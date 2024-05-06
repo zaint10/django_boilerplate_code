@@ -30,7 +30,7 @@ CORS_ALLOW_HEADERS = (
 )
 
 if ENVIRONMENT == "development":
-    ALLOWED_HOSTS = ALLOWED_HOSTS.append("*")
+    ALLOWED_HOSTS.append("*")
     CCORS_ALLOW_ALL_ORIGINS = True
 
 INSTALLED_APPS = [
